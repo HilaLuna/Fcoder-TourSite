@@ -1,0 +1,28 @@
+/* Özel buton*/
+
+.mybutton{
+    display: inline-block; //a'nın display'ine block vermemizin nedeni: a normalde kendi kısmı
+    //kadar yer kaplıyor o yüzden ona padding verdiğimiz zaman o iç boşluk gidip diğer elemanların üzerine
+    //biniyor çünkü boyutlandırma özelliği yok. Block dediğimiz zaman satıra yayılıp yönetebiliyor.
+    color: $text-color;
+    background-color: $primary-color;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+
+&:hover{
+    background-color: $text-color;
+    color: $primary-color;
+    border: 1px solid $primary-color;   
+    }
+}
+
+/* Pembe Çubuk */
+.line{
+    background-color: $primary-color;
+    width: 150px;
+    height: 5px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
